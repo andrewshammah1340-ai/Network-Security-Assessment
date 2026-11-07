@@ -1,0 +1,7 @@
+Nmap scan results after UFW firewall configuration.
+
+Target: 192.168.64.2
+Result: Host is up.
+Scanned: 1000 default TCP ports.
+Open ports: 0
+Closed ports: 1000

@@ -1,52 +1,55 @@
-# Network-Security-Assessment
-Beginner cybersecurity project using Ubuntu, Nmap, and Wireshark.
-# Network Security Assessment
+# Network Discovery & Security Assessment
 
 ## Project Overview
-This project demonstrates a beginner cybersecurity lab built using Ubuntu Linux, Nmap, and Wireshark. The goal was to explore network discovery, analyze network traffic, identify listening services, and practice basic system hardening.
 
-## Tools Used
-- Ubuntu Linux
-- UTM Virtual Machine
-- Nmap
-- Wireshark
-- UFW Firewall
-- Linux Terminal
+This project is a hands-on cybersecurity lab designed to explore basic network discovery, traffic analysis, and Linux firewall configuration.
+
+Using an Ubuntu virtual machine, I performed network scans with Nmap, analyzed network traffic with Wireshark, and configured UFW (Uncomplicated Firewall) to practice foundational network security concepts.
+
+## Project Objectives
+
+- Perform network discovery and port scanning.
+- Identify open and closed network ports.
+- Analyze ICMP, DNS, and TCP network traffic.
+- Understand the TCP three-way handshake.
+- Identify locally listening services.
+- Configure basic Linux firewall rules.
+- Document security findings and observations.
+
+## Tools & Technologies
+
+| Tool | Purpose |
+|---|---|
+| Ubuntu Linux | Lab operating system |
+| UTM | Virtual machine environment |
+| Nmap | Network discovery and port scanning |
+| Wireshark | Network packet analysis |
+| UFW | Linux firewall configuration |
+| Terminal | Command-line administration |
 
 ## Project Activities
 
-### 1. Network Scanning with Nmap
-- Scanned my Ubuntu virtual machine using Nmap.
-- Used service detection with `nmap -sV`.
-- Identified the status of the 1,000 default TCP ports scanned.
+### 1. Network Discovery with Nmap
+
+Performed service detection scans against my Ubuntu virtual machine.
+
+- Identified the target IP address.
+- Scanned the default 1,000 TCP ports.
 - Saved scan results before and after firewall configuration.
+- Observed that all 1,000 scanned ports were closed in both scans.
 
 ### 2. Network Traffic Analysis with Wireshark
+
 Captured and analyzed three types of network traffic:
 
-- **ICMP:** Observed ping requests and replies.
-- **DNS:** Examined how domain names are resolved into IP addresses.
-- **TCP:** Observed the TCP three-way handshake (SYN, SYN-ACK, ACK).
+- **ICMP:** Examined network diagnostic traffic using ping.
+- **DNS:** Observed domain name resolution when accessing websites.
+- **TCP:** Identified the TCP three-way handshake (SYN, SYN-ACK, ACK).
 
-### 3. Firewall Configuration
-- Checked the initial UFW firewall status.
-- Configured the firewall to deny incoming connections by default.
-- Allowed outgoing connections.
-- Enabled UFW and verified its status.
+Original packet capture files are included in the `captures` folder.
 
-## Results
-- Nmap identified the virtual machine as online.
-- All 1,000 default TCP ports scanned were closed in both scans.
-- Successfully captured and analyzed ICMP, DNS, and TCP traffic.
-- Enabled UFW firewall protection with default incoming-deny and outgoing-allow policies.
+### 3. Linux Firewall Configuration
 
-## What I Learned
-- How to use Linux command-line tools.
-- How network scanning works.
-- How to recognize common network protocols.
-- How DNS, ICMP, and TCP traffic work.
-- How to configure a basic Linux firewall.
-- How to document cybersecurity testing results.
+Configured UFW with the following policies:
 
-## Conclusion
-This project provided hands-on experience with basic network security concepts, Linux administration, network traffic analysis, and firewall configuration.
+- Default incoming

@@ -10,8 +10,9 @@ Used google.com to observe DNS name resolution.
 
 ## TCP
 Used curl to connect to example.com and observe the TCP three-way handshake:
+
 - SYN
 - SYN-ACK
 - ACK
 
-Original packet capture files will be uploaded here.
+The original packet capture files are included in this folder.

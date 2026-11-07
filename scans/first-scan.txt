@@ -1,1 +1,12 @@
 Nmap scan results will be added here.
+Starting Nmap scan
+Target: 192.168.64.2
+Host is up.
+
+PORT    STATE    SERVICE
+All 1000 scanned TCP ports: CLOSED
+
+Open ports: 0
+Closed ports: 1000
+
+Nmap scan completed.

@@ -75,3 +75,37 @@ I used Wireshark to capture and examine three types of network traffic.
 This project gave me practical experience with networking and cybersecurity tools. I learned how to scan a Linux system, analyze network traffic, configure a firewall, and document security testing results.
 
 It also helped me better understand how network protocols operate and how basic security controls are used in a Linux environment.
+
+## Key Findings & Lessons Learned
+
+### Nmap Network Scanning
+- The Ubuntu virtual machine was reachable at 192.168.64.2.
+- The first scan identified all 1,000 default TCP ports as closed.
+- The second scan, performed after enabling UFW, also showed all 1,000 ports as closed.
+- This demonstrated how Nmap can identify the status of network ports.
+
+### Wireshark Packet Analysis
+- ICMP packets demonstrated network connectivity testing.
+- DNS packets showed how domain names are resolved into IP addresses.
+- TCP analysis revealed the three-way handshake: SYN, SYN-ACK, and ACK.
+
+### Firewall Configuration
+- Configured UFW to deny incoming connections by default.
+- Configured UFW to allow outgoing connections.
+- Verified that the firewall was active.
+- Learned how basic firewall policies help control network traffic.
+
+### Lessons Learned
+Through this project, I gained practical experience with:
+- Linux command-line tools.
+- Network discovery using Nmap.
+- Packet analysis using Wireshark.
+- Understanding TCP/IP networking.
+- Basic Linux firewall administration.
+- Documenting technical findings.
+
+### Future Improvements
+- Investigate additional network services.
+- Explore firewall logging and traffic filtering.
+- Perform additional authorized network scans.
+- Develop deeper knowledge of network security and vulnerability assessment.
